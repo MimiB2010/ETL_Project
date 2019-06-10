@@ -1,7 +1,8 @@
-#ETL Project
+ETL Project
 
 For this project, our team extracted data from Lending Club, US Census, and Zillow. The Lending Club data was a SQLite file from [Kaggle.com](https://www.kaggle.com/wendykan/lending-club-loan-data#database.sqlite). The US Census and Zillow data were csv files obtained from [Kaggle.com](https://www.kaggle.com/goldenoakresearch/us-household-income-stats-geo-locations). and [Zillow.com](https://www.zillow.com/research/data/) respectively.
 
+<<<<<<< HEAD
 We cleaned the data from each source using Jupyter Notebook and Pandas, before putting the data into a relational SQL database, called ZipCodes, via pgAdmin4. These tables are home_values, income_by_zip, loan_data, and loan_information.
 
 Details about the cleaning and filtering process:
@@ -15,3 +16,6 @@ Details about the cleaning and filtering process:
     Another table kept the non numeric columns along with the abbreviated zip code.  This table, loan_information, has 11 columns: zip_code, funded_amnt_inv, sub_grade, home_ownership, emp_title, emp_length, issue_d, loan_status, pymnt_plan, purpose, addr_state.
 
     More information about the database can be found in Entity Relationship Diagram.png and Database Documentation.pdf
+=======
+We cleaned the data from each source using Jupyter Notebook, Pandas,and pgAdmin 4. Finally, we loaded the clean data in to Relational database with four tables. These tables are home_values, income_by_zip, loan_info(numeric aggregates), and loan_information(varchars).
+>>>>>>> 31a8b8e1a9b665ec1d616432a6d5eb05c444d4e5
